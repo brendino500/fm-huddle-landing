@@ -11,6 +11,7 @@ const useStyles = makeStyles({
   root: {
     position: "absolute",
     right: 0,
+    bottom: 0,
     backgroundColor: "transparent",
     margin: 20,
   },

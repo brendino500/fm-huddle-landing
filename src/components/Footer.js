@@ -4,8 +4,10 @@ import { BottomNavigation, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
     backgroundColor: "transparent",
+    position: "absolute",
+    left: 0,
+    bottom: 0,
   },
   text: {
     fontFamily: "Poppins",
