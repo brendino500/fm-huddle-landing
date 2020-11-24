@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     margin: 15,
   },
   textContainer: {
-    maxWidth: 450,
+    maxWidth: 500,
   },
   title: {
     fontFamily: "Poppins",
@@ -17,14 +17,18 @@ const useStyles = makeStyles({
     fontSize: 34,
     fontWeight: "strong",
     letterSpacing: 1,
+    margin: 40,
   },
   text: {
     fontFamily: "Poppins",
     color: "#ffffff",
-    fontSize: 15,
+    fontSize: 14,
+    marginTop: 20,
+    marginBottom: 20,
   },
   image: {
-    maxWidth: 450,
+    maxWidth: 730,
+    width: "100%",
   },
   button: {
     color: "#9952FF",

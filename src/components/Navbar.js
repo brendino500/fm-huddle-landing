@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  logo: {
+    margin: 20,
+  },
 }));
 
 export default function Navbar() {
@@ -35,7 +38,7 @@ export default function Navbar() {
             color="inherit"
             aria-label="menu"
           ></IconButton>
-          <Logo />
+          <Logo className={classes.logo} />
         </Toolbar>
       </AppBar>
     </div>

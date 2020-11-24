@@ -9,8 +9,10 @@ import { BottomNavigation, BottomNavigationAction } from "@material-ui/core/";
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
+    position: "absolute",
+    right: 0,
     backgroundColor: "transparent",
+    margin: 20,
   },
   icon: {
     color: "#ffffff",
