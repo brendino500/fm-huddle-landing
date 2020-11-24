@@ -1,6 +1,23 @@
-html {
+body {
   background-image: url(../images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  background-color: #9952ff;
+  background-color: #674baf;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #674baf;
+  }
+
+  #mock-illustration {
+    max-width: 50%;
+  }
+}
+
+#logo-image {
+  max-width: 13rem;
 }

@@ -49,7 +49,7 @@ export default function Main() {
   return (
     <Container>
       <Grid container direction="row" justify="center" alignItems="center">
-        <MockupIllustration className={classes.image} />
+        <MockupIllustration className={classes.image} id="mock-illustration" />
         <div className={classes.textContainer}>
           <Typography className={classes.title}>
             <b>Build The Community Your Fans Will Love</b>

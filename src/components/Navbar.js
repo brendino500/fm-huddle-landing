@@ -38,7 +38,7 @@ export default function Navbar() {
             color="inherit"
             aria-label="menu"
           ></IconButton>
-          <Logo className={classes.logo} />
+          <Logo className={classes.logo} id="logo-image" />
         </Toolbar>
       </AppBar>
     </div>
