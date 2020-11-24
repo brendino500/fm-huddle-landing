@@ -1,28 +1,24 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import BottomNavigation from "@material-ui/core/BottomNavigation";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
+import { BottomNavigation, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
     width: 500,
+    backgroundColor: "transparent",
+  },
+  text: {
+    fontFamily: "Poppins",
+    fontSize: 10,
   },
 });
 
-export default function SimpleBottomNavigation() {
+export default function Footer() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
 
   return (
-    <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className={classes.root}
-    >
-      <p class="attribution">
+    <BottomNavigation className={classes.root}>
+      <Typography className={classes.text}>
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
@@ -31,12 +27,12 @@ export default function SimpleBottomNavigation() {
         >
           Frontend Mentor
         </a>
-        . Coded by
+        . Coded by{" "}
         <a href="https://brendaty.com" target="_blank" rel="noreferrer">
           Brenda Ty
         </a>
         .
-      </p>
+      </Typography>
     </BottomNavigation>
   );
 }
