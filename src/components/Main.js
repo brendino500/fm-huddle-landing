@@ -4,7 +4,7 @@ import { Container, Typography, Grid, Button } from "@material-ui/core";
 
 import { ReactComponent as MockupIllustration } from "../images/illustration-mockups.svg";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     margin: 15,
   },
@@ -29,6 +29,9 @@ const useStyles = makeStyles({
   image: {
     maxWidth: 730,
     width: "100%",
+    [theme.breakpoints.between("xs", "sm")]: {
+      maxWidth: 300,
+    },
   },
   button: {
     color: "#9952FF",
@@ -41,7 +44,7 @@ const useStyles = makeStyles({
     textTransform: "none",
     margin: 5,
   },
-});
+}));
 
 export default function Main() {
   const classes = useStyles();
