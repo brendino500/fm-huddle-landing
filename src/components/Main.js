@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 730,
     width: "100%",
     [theme.breakpoints.between("xs", "sm")]: {
-      maxWidth: 300,
+      // transform: "scale(0.5)",
+      // maxWidth: 500,
     },
   },
   button: {
